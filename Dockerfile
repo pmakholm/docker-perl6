@@ -7,8 +7,8 @@ RUN git clone https://github.com/MoarVM/MoarVM.git && \
     git clone https://github.com/rakudo/rakudo.git && \
     git clone https://github.com/rakudo/star.git rakudo-star && (cd rakudo-star ; git submodule update --init )
 
-ENV RAKUDO_GIT_TAG 2014.09
-ENV RAKUDO_STAR_GIT_TAG ec742d5d9c
+ENV RAKUDO_GIT_TAG HEAD
+ENV RAKUDO_STAR_GIT_TAG HEAD
 
 WORKDIR /usr/src/MoarVM
 RUN git checkout $RAKUDO_GIT_TAG && \
