@@ -24,6 +24,7 @@ RUN git checkout $RAKUDO_GIT_TAG && \
 
 WORKDIR /usr/src/rakudo-star
 RUN git checkout $RAKUDO_STAR_GIT_TAG && \
+    git submodule foreach git checkout master && \
     /usr/bin/perl tools/build/module-install.pl /usr/local/bin/perl6-m /usr/local/languages/perl6/lib moarvm mbc modules/MODULES.txt && \
     /usr/bin/perl tools/build/bin-install.pl /usr/local/bin/perl6-m /usr/local/bin m modules/ufo/bin/ufo modules/panda/bin/panda modules/doc/bin/p6doc
 
