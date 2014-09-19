@@ -1,7 +1,5 @@
-FROM debian:jessie
+FROM buildpack-deps:jessie
 MAINTAINER Peter Makholm <peter@makholm.net>
-
-RUN apt-get update && apt-get install -y git-core build-essential && rm -rf /var/lib/apt/lists/*
 
 WORKDIR /usr/src
 RUN git clone https://github.com/MoarVM/MoarVM.git && \
