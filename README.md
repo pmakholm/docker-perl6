@@ -8,6 +8,9 @@ The following components are included:
  - MoarVM (with JIT enabled)
  - The Rakudo Star module list
  - The Perl6 modules tools: panda and ufo
+ - Additional modules not included in Rakudo Star
+   - Inline::Perl5
+   - v5
 
 There are two versions of this image:
 

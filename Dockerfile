@@ -28,3 +28,5 @@ RUN git checkout $RAKUDO_STAR_GIT_TAG && \
     /usr/bin/perl tools/build/bin-install.pl /usr/local/bin/perl6-m /usr/local/bin m modules/ufo/bin/ufo modules/panda/bin/panda modules/doc/bin/p6doc
 
 WORKDIR /root
+RUN apt-get update && apt-get install -y libperl-dev && \
+    for module in /usr/src/rakudo-star/modules/zavolaj/ v5 Inline::Perl5 ; do panda install $module ; done
