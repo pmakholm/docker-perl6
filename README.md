@@ -18,7 +18,7 @@ There are two versions of this image:
  - unstable (git branch: blead)
 
 The 'latest' build is based on the last Rakudo release (presently
-2014.08) and the 'unstable' build is based on the HEAD of alle relevant
+2014.09) and the 'unstable' build is based on the HEAD of alle relevant
 git repositories.
 
 ## See also
